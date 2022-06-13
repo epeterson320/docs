@@ -1,0 +1,24 @@
+{
+  "name": "@local/example-monorepo",
+  "version": "1.0.0",
+  "description": "UI & API example documentation",
+  "author": "Eric Peterson",
+  "private": true,
+  "license": "UNLICENSED",
+  "workspaces": [
+    "api",
+    "sdk",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epeterson320/monorepo-docs-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/epeterson320/monorepo-docs-example/issues"
+  },
+  "homepage": "https://github.com/epeterson320/monorepo-docs-example#readme",
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}
