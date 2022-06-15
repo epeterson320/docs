@@ -94,7 +94,7 @@ See also: [Composition vs Inheritance — React](https://reactjs.org/docs/compos
 
 ## State Management
 
-> tl;dr Just say no to Redux.
+> tl;dr Just say no to Redux. Probably.
 
 Use your judgment along with the following heuristic to decide where to manage state:
 
@@ -133,7 +133,7 @@ Use your judgment along with the following heuristic to decide where to manage s
 
 9. If the actions and state for the application-specific logic are complex enough that you want to use the reducer pattern, and you really want to use Redux:
 
-   Install Redux. If state really needs to be persisted across pages AND component lifecycles AND it's not just a copy of (or derived from) remote data AND it's too complicated to persist with [`useLocalStorageValue()`](https://mantine.dev/hooks/use-local-storage-value/), then consider using a state management library like redux-toolkit. But keep in mind that global variables tend to accumulate and should be proactively re-organized as features are added.
+   Install Redux. If state really needs to be persisted across pages AND component lifecycles AND it's not just a copy of (or derived from) remote data AND it's too complicated to persist with [`useLocalStorageValue()`](https://mantine.dev/hooks/use-local-storage-value/), then we should consider using Redux. In fact, Redux-toolkit is fantastic. But keep in mind that global variables tend to accumulate and should be proactively re-organized as features are added.
 
    If we rush out a page component with messy state management, its mess will be limited to that page. If we rush out messy state management in Redux, that affects the state and actions available everywhere.
 
