@@ -45,17 +45,17 @@ To stop the local system, press Ctrl+C. The local database container will keep i
 - Build all projects: `npm run build --workspaces`
 - Run all tests: `npm test --workspaces --if-present`
 
-There are more npm tasks, but they vary by workspace. Run `npm run --workspaces` to see them all. **api-sdk**, for instance, has no `test` task because the code is all generated. **app-server** has a `start:prod` task while **web** doesn't because it's a static site.
+There are more npm tasks, but they vary by workspace. Run `npm run --workspaces` to see them all. **sdk**, for instance, has no `test` task because the code is all generated. **api** has a `start:prod` task while **web** doesn't because it's a static site.
 
 ## Full-stack debugging
 
-To use breakpoints across both `app-server` and `web`, run the system locally via `npm run system:start`, then run the _Attach to system:start_ debug task from VSCode.
+To use breakpoints across both `api` and `web`, run the system locally via `npm run system:start`, then run the _Attach to system:start_ debug task from VSCode.
 
 To make sure it works on your machine, follow these steps:
 
 1. Start the system locally via `npm run system:start`.
 1. Set a breakpoint in **web/src/healthCheck/StatusPage.tsx** right after the line including `useStatus()`.
-1. Set a breakpoint in **app-server/src/health/health.controller.ts** on the line calling `this.healthService.getDBTime()`.
+1. Set a breakpoint in **api/src/health/health.controller.ts** on the line calling `this.healthService.getDBTime()`.
 1. Open the debug pane in VSCode and run the debug task titled _Attach to system:start_.
 1. Wait for a new Chrome window to open, and navigate to http://localhost:3001/status.
 1. Verify that the UI shows the loading spinner, VSCode opens the **StatusPage.tsx** (frontend) file, and indicates that it is stopped on the breakpoint.
