@@ -61,7 +61,7 @@ To stop the local system, press Ctrl+C. The local database container will keep i
 
 There are more npm tasks, but they vary by workspace. Run `npm run --workspaces` to see them all. **sdk**, for instance, has no `test` task because the code is all generated. **api** has a `start:prod` task while **web** doesn't because it's a static site.
 
-## Full-stack debugging
+## ⏯⏰🌎 Full-stack debugging (pause time anywhere)
 
 To use breakpoints across both `api` and `web`, run the system locally via `npm run system:start`, then run the _Attach to system:start_ debug task from VSCode.
 
