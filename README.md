@@ -1,4 +1,18 @@
-> This is a modified version of the engineering documentation I wrote for an application where I was the lead developer.
+> This is a modified version of the engineering documentation I wrote for an application where I was the lead developer. In addition to the typical setup-run-test-deploy tasks, I explain a few bigger choices and guide new devs through a few common tasks, such as:
+> * Folder layout
+> * Database migrations
+> * Adding new (HTTP) API endpoints
+> * Adding permissions on resources
+> * React concerns:
+>   * Major React contexts provided
+>   * Component authoring guidelines & naming conventions
+>   * Why not Redux
+> * Build & Release config variables
+> * Monitoring dashboards
+> * Bigger migrations for eventual consideration, along with possible strategies for how
+>   * Create React App to Next/Redwood/Vite
+>   * MUI to other UI kit
+> * Library choices, like Mantine for hooks and Luxon for dates.
 
 # Our Monorepo
 
